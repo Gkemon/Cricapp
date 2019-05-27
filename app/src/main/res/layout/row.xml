@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:id="@+id/cardview"
+    app:cardBackgroundColor="@color/white"
+ app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back">
+
+        <TextView
+            android:id="@+id/matchtypeTV"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_column="0"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/DateTv"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_column="0"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/matchtypeTV"
+            android:layout_marginStart="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/team1TV"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/team2TV"
+                android:layout_column="0"
+
+
+                android:layout_weight="1"
+                android:background="@drawable/btnsigninbackgrnd"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Vs."
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:shadowColor="@color/black" />
+
+            <TextView
+                android:id="@+id/team2TV"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:layout_alignTop="@+id/team2TV"
+                android:layout_column="0"
+
+
+                android:layout_weight="1"
+                android:background="@drawable/btnsigninbackgrnd"
+                android:gravity="center"
+
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"  />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MatchDetailsActivity">
+
+
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="3dp"
+    android:background="@drawable/btnregister">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@drawable/btnsigninbackgrnd1"
+                    android:gravity="center"
+                    android:text="Batting Summary"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/btnsigninbackgrnd"
+                    android:gravity="center"
+                    android:id="@+id/battingt1"
+                    android:text="Team1"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/batting1detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/btnsigninbackgrnd"
+                    android:gravity="center"
+                    android:id="@+id/battingt2"
+                    android:text="Team2"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/battingt2detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@drawable/btnsigninbackgrnd1"
+                    android:gravity="center"
+                    android:text="Bowling Summary"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/btnsigninbackgrnd"
+                    android:gravity="center"
+                    android:text="Team1"
+                    android:textColor="@color/white"
+                    android:id="@+id/bowlingt1"
+
+                    />
+
+                <TextView
+                    android:id="@+id/bowling1detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/btnsigninbackgrnd"
+                    android:gravity="center"
+                    android:text="Team2"
+                    android:id="@+id/bowlingt2"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/bowlingt2detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@drawable/btnsigninbackgrnd1"
+                    android:gravity="center"
+                    android:text="Fielding Summary"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/btnsigninbackgrnd"
+                    android:gravity="center"
+                    android:text="Team1"
+                    android:id="@+id/fieldingt1"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/fieldingt1detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:background="@drawable/btnsigninbackgrnd"
+                    android:gravity="center"
+                    android:text="Team2"
+                    android:id="@+id/fieldingt2"
+                    android:textColor="@color/white"
+
+                    />
+
+                <TextView
+                    android:id="@+id/fieldingt2detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+</ScrollView>
