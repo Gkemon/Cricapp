@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
     <item
-        android:id="@+id/navigation_shop"
-        android:icon="@drawable/ic_launcher_background"
+        android:id="@+id/navigation_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_fixture"
         android:title="Fixture" />
 
     <item
-        android:id="@+id/navigation_gifts"
-        android:icon="@drawable/ic_launcher_background"
+        android:id="@+id/navigation_squard"
         android:title="Squard" />
 
     <item
-        android:id="@+id/navigation_cart"
-        android:icon="@drawable/ic_launcher_background"
+        android:id="@+id/navigation_match"
         android:title="Matches" />
 
 

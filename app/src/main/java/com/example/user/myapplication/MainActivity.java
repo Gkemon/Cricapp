@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.user.myapplication.HelperClass.BottomNavigationViewHelper;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,40 +26,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-       // mAuth = FirebaseAuth.getInstance();
-       // detailedscore=(Button)findViewById(R.id.button);
         database = FirebaseDatabase.getInstance();
-        livecmtry=(Button)findViewById(R.id.register);
-        livecmtry.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent in1=new Intent(MainActivity.this, CommentryActivity.class);
-                startActivity(in1);
-            }
-
-        });
 
         toolbar = getSupportActionBar();
         toolbar.setTitle("Fixture");
 
+        loadFragment(new HomeFragment());
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        BottomNavigationViewHelper.disableShiftMode(navigation);
 
 
-//        detailedscore.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//                Intent in=new Intent(MainActivity.this, FixtureFragment.class);
-//                in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                MainActivity.this.startActivity(in);
-//
-//            }
-//
-//        });
+
 
     }
 
@@ -77,21 +59,28 @@ public class MainActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
             switch (item.getItemId()) {
-                case R.id.navigation_shop:
+                case R.id.navigation_fixture:
                     toolbar.setTitle("Fixture");
 
                     fragment = new FixtureFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_gifts:
+                case R.id.navigation_squard:
                     toolbar.setTitle("Squard");
 
                     fragment = new SquardFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_cart:
-                    toolbar.setTitle("Match");
+                case R.id.navigation_home:
+                    toolbar.setTitle("Home");
 
+                    fragment = new HomeFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.navigation_match:
+                    toolbar.setTitle("Match");
+                    fragment = new MatchFragment();
+                    loadFragment(fragment);
                     return true;
 
             }
