@@ -8,11 +8,11 @@
         android:title="Home" />
     <item
         android:id="@+id/navigation_fixture"
-        android:title="Fixture" />
+        android:title="Match Info" />
 
     <item
         android:id="@+id/navigation_squard"
-        android:title="Squard" />
+        android:title="Squad" />
 
     <item
         android:id="@+id/navigation_match"

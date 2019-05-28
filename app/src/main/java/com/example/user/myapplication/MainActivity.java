@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         toolbar = getSupportActionBar();
-        toolbar.setTitle("Fixture");
+        toolbar.setTitle("Home");
 
         loadFragment(new HomeFragment());
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.navigation_fixture:
-                    toolbar.setTitle("Fixture");
+                    toolbar.setTitle("Match info");
 
                     fragment = new FixtureFragment();
                     loadFragment(fragment);

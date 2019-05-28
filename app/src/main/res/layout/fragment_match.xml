@@ -3,12 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SquardFragment">
+   >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Match Fragment" />
+        android:src="@drawable/fixture"
+        android:scaleType="fitXY"/>
+    <!-- TODO: Update blank fragment layout -->
+
 
 </FrameLayout>
